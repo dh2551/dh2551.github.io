@@ -1,0 +1,279 @@
+/* Style sheet for angela's page */
+
+/* Here is a list of required elements to include for the assignments home page.
+
+Create an internal style sheet (within the <head> section of the document) with 
+at least two different CSS rule sets (consisting of a selector and declaration block) 
+for your assignments home page.
+Your assignments home page should also include two or more different inline style 
+rules—as style attributes of HTML elements. */
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+@font-face {
+  font-family: 'Lexend';
+  src:
+    url('fonts/Lexend-Regular.ttf'),
+    url('fonts/Lexend-Regular.ttf') format('woff');
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  src:
+    url('fonts/Inconsolata-Regular.ttf'),
+    url('fonts/Inconsolata-Regular.ttf') format('woff');
+}
+
+
+@font-face{
+  font-family: 'Roboto';
+  src:
+    url('fonts/Roboto-Regular.ttf'),
+    url('fonts/Roboto-Regular.ttf') format('woff');
+}
+
+
+header{
+  padding: 0.5em;
+  padding-bottom: 0em;
+}
+
+
+body {
+  background-color: #F7F7F7; 
+}
+
+html {
+  -webkit-text-size-adjust: 100%; /* prevent font scaling in landscape orientation on iOS devices */
+  scroll-behavior: smooth; /* not supported in all browsers but doesn't affect functionality */
+}
+
+
+/*
+
+*/
+
+ul.nav_l {
+  list-style: none;
+  font-weight: bold;
+  padding-bottom: 0.5em;
+}
+
+main{
+  margin-bottom: 20px
+}
+
+
+
+article{
+  padding:1.3em;
+}
+
+
+footer {
+  padding-bottom:10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border: 2px solid #d4a8a5;
+  border-radius: 5px
+}
+
+
+
+h1 {  
+  color: black /* antiquewhite */;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 3em; /* ems are relative font size */
+  line-height: 60%;
+}
+
+h2 {  
+  color: black; /* antiquewhite */
+  font-family: 'Roboto Mono', monospace;
+  font-size: 2em; /* ems are relative font size */
+}
+
+
+p {
+  color: black; 
+  font-family: 'Inconsolata', monospace;
+  font-size: 1.3em;
+}
+
+
+footer > p {
+  font-size: 0.9em;
+}
+
+a {
+  color: black; 
+  font-family: 'Inconsolata', monospace;
+  font-size: 1.3em;
+}
+
+
+a:link, a:visited {
+  color: lightpink;
+  text-decoration: underline;
+  text-decoration-color: #d4a8a5;
+}
+
+a:hover {
+  color: #d4a8a5;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+img {
+  display:flex;
+  max-width:100%;
+  min-width:50%;
+  height:auto;
+  padding-right:1em;
+}
+
+video {
+  padding:0px;
+}
+
+article>iframe {
+  height:900px;
+  width:100px;
+
+}
+
+main.homepage {
+    border: 2px solid #d4a8a5; 
+    border-radius: 5px;
+
+  }
+
+
+
+/* class attributes */
+
+.title {
+  font-size: 2em; /* ems are relative font size */
+}
+
+.footer1 {
+  font-size: 1.3em; /* ems are relative font size */
+  clear:left;
+}
+
+.button{
+  border: 2px solid black;
+  background-color:#F7F7F7;
+}
+
+.button:hover {
+  background-color: black; 
+  border: 2px solid #F7F7F7;
+  color: #F7F7F7;
+}
+
+
+article > iframe{
+  width: 100%;
+  height:100%;
+
+}
+
+
+/* ids*/
+
+
+#container{
+  max-width:90%; 
+  margin:auto;
+}
+
+#fooim {
+  max-width:20%;
+  min-width:2%;
+}
+#source{
+  font-size:0.8em;
+}
+
+img.fooim:hover{
+    opacity:0.5;
+}
+
+@media only screen and (min-width: 960px) {
+
+  ul.nav_l {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    font-weight: bold;
+  }
+
+  li.nav_i {
+    margin-right:2%;
+
+  }
+
+
+  main {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.3em;
+
+  }
+
+
+
+  article{
+    padding:1.3em;
+    padding-top:0em;
+    padding-right:0.5em;
+    padding-left:0.5em;
+
+  }
+
+  article> iframe{
+    height:100%;
+    width:100%;
+    margin-top: 1.2em;
+  }
+
+
+ img{
+  width:100%;
+
+  }
+
+  video{
+    padding-top:0px;
+  }
+
+  #fooim {
+    max-width:8%;
+    min-width:2%;
+  }
+
+  img.fooim:hover{
+    opacity:0.5;
+  }
+
+  main.homepage {
+    border: 2px solid #d4a8a5; 
+    border-radius: 5px;
+    display:grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap: 0.3em;
+
+  }
+
+
+
+
+
+}
+
+
+
